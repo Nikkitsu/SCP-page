@@ -20,9 +20,10 @@ header {
     background: url('https://scp-wiki.wdfiles.com/local--files/component:theme/logo.png') 10px 40px no-repeat;
 }
 
+
 /* h1 properties */
 h1 {
-    font-family: "Bauhaus LT Light", Arial, Helvetica, sans-serif;
+    font-family: "Bauhaus LT Light", 'Nanum Gothic', Arial, sans-serif;
     font-weight: 700;
     font-size: 360%;
     color: #eee;
@@ -64,7 +65,7 @@ header h2 {
     margin-bottom: 19px;
 }
 
-/* general a properties */
+/* anchor tag properties */
 
 a,
 a:active,
@@ -258,6 +259,74 @@ a:hover {
     font-weight: normal;
 }
 
+/* Page rating button */
+
+#page-rating {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 100%;
+    text-align: right;
+}
+
+#page-rating-widget {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #633;
+    border: solid 1px #633;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+    margin-bottom: 10px;
+    margin-right: 2em;
+}
+
+#rating-points {
+    color: #fff;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.rating-button {
+    background-color: #fff6f0;
+    border-top: solid 1px #633;
+    border-bottom: solid 1px #633;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+.rating-button a {
+    color: #633;
+}
+
+.rating-button:hover {
+    background-color: #633;
+    padding: 0 4px;
+    border-left: solid 1px #fff6f0;
+    border-right: solid 1px #fff6f0;
+    border-spacing: 0px 1px;
+}
+
+.rating-button a:last-child {
+    margin: 0px 1px;
+}
+
+.rating-button:hover a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#cancel-rating a {
+    text-transform: uppercase;
+    color: #966;
+    padding: 0 5px;
+}
+
+#cancel-rating a:hover {
+    color: #fffff0;
+    text-decoration: none;
+}
+
+/* Image properties */
+
 .scp-image {
     display: flex;
     flex-direction: column;
@@ -273,13 +342,6 @@ a:hover {
     border: 0;
 }
 
-#main-article {
-    margin: 0 2em 0 3em;
-    padding: 1em;
-    min-height: 720px;
-    position: relative;
-}
-
 .image-caption {
     display: block;
     background-color: #eee;
@@ -293,4 +355,13 @@ a:hover {
 .image-caption p {
     margin: 0;
     padding: 0 10px;
+}
+
+/* Article properties */
+
+#main-article {
+    margin: 0 2em 0 3em;
+    padding: 1em;
+    min-height: 720px;
+    position: relative;
 }
